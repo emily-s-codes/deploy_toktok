@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import placeholderImg from "../../img/ProfileImgPlaceholder.png"
 import './PersonSearch.css'
 
-const userFetch = process.env.REACT_APP_BACKEND_URL_USERS;
+const userFetch = process.env.REACT_APP_BACKEND_URL + "/api/users";
 
 const PersonSearch = ({ useContextUser }) => {
     const [searchData, setSearchData] = useState([])
